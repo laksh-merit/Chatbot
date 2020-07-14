@@ -1,5 +1,3 @@
-Created Date: 18 Nov 2018
-
 ## INSTALLATION:
 <br> `pip install -r requirements.txt`
 <br><br>
