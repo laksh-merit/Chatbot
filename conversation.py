@@ -1,6 +1,9 @@
 import os
 import aiml
+import pyttsx3
 #from autocorrect import spell
+
+engine = pyttsx3.init()
 
 BRAIN_FILE="./pretrained_model/aiml_pretrained_model.dump"
 
@@ -23,5 +26,7 @@ while True:
     response = k.respond(query)
     if response:
         print("bot > ", response)
+        engine.say(response)
+        engine.runAndWait()
     else:
         print("bot > :) ", )
